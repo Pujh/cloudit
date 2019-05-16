@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<!--
+	App by FreeHTML5.co
+	Twitter: http://twitter.com/fh5co
+	URL: http://freehtml5.co
+-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>App &mdash; Free Website Template, Free HTML5 Template by FreeHTML5.co</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel  -->
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <div id="page-wrap">
+
+
+        <!-- ==========================================================================================================
+                                                           Nav-BAR & Header
+             ========================================================================================================== -->
+
+        <div>
+            <nav class="container navbar navbar-expand-lg main-navbar-nav navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" style="color: #000 !important" href="">CloudIT</a>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-items-center ml-auto mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #000 !important">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color: #000 !important" href="./My_announcements.html">My Announcements</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" style="color: #000 !important" href="./index.html">Create Announcement</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="container fh5co-hero-inner" style="color: #000 !important">
+                <h2>Create Announcement</h2>
+            </div>
+
+
+        </div> <!-- first section wrapper -->
+        <!-- ==========================================================================================================
+                                                         FORM
+             ========================================================================================================== -->
+
+        <div class="fh5co-advantages-outer">
+            <div class="container">
+
+                <div class="row fh5co-advantages-grid-columns wow animated fadeIn" data-wow-delay="0.36s">
+
+                    <div class="col-sm-4">
+                        <h1 class="grid-title">Annonuncement Tittle</h1>
+                        <p><input id="tittle" type="text" name="Annonuncement_Tittle"></p>
+                        <p id="tilted1" style="display:none"><strong>Your tittle needs 4 or more letters to be accepted.</strong></p>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h1 class="grid-title">Number of Workers Required</h1>
+                        <p><input id="workers" type="text" name="Number_of_workers"></p>
+                        <p id="tilted2" style="display:none"><strong>You need to introduce a number bigger than 0.</strong></p>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h1 class="grid-title">Role in the company</h1>
+                        <p><input id="role" type="text" name="Role"></p>
+                        <p id="tilted3" style="display:none"><strong>Your need to introduce 1 or more roles.</strong></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h1 class="grid-title">Knowledges Required</h1>
+                        <p><input id="knowledge" type="text" name="Knowledges"></p>
+                        <p id="tilted4" style="display:none"><strong>You need to specify the knowledge that is required.</strong></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h1 class="grid-title">Salary</h1>
+                        <p><input id="salary" type="text" name="salary"></p>
+                        <p id="tilted5" style="display:none"><strong>You need to introduce a number bigger than 0.</strong></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p><input id="input" type="submit" value="Submit" style="background-color:#648cff;"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div> <!-- main page wrapper -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>input.onclick = function () {
+    var counter = 0;
+    if (tittle.value == "555" || tittle.value.length > 3) {
+        localStorage.setItem("tittle", tittle.value);
+        tilted1.style.display = 'none';
+    } else {
+        counter += 1;
+        tilted1.style.display = '';
+    }
+    if (workers.value == "555" || !(isNaN(workers.value)) || workers.value > 0) {
+        localStorage.setItem("workers", workers.value);
+        tilted2.style.display = 'none';
+    } else {
+        counter += 1;
+        tilted2.style.display = '';
+    }
+    if (role.value == "555" || role.value.length > 3) {
+        localStorage.setItem("role", role.value);
+        tilted3.style.display = 'none';
+    } else {
+        counter += 1;
+        tilted3.style.display = '';
+    }
+    if (knowledge.value == "555" || knowledge.value.length > 3) {
+        localStorage.setItem("knowledge", knowledge.value);
+        tilted4.style.display = 'none';
+    } else {
+        counter += 1;
+        tilted4.style.display = '';
+    }
+    if (salary.value == "555" || !(isNaN(salary.value)) || salary.value > 0) {
+        localStorage.setItem("salary", salary.value);
+        tilted5.style.display = 'none';
+    } else {
+        counter += 1;
+        tilted5.style.display = '';
+    }
+    if (counter == 0) {
+        location.replace("My_announcements.html");
+    }
+        }</script>
+</body>
+</html>
